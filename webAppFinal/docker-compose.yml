@@ -8,6 +8,6 @@ services:
         container_name: nginx
         build: nginx
         ports:
-            - 80:80
+            - 9090:80
         depends_on:
            - app
