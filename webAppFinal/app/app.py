@@ -4,7 +4,7 @@ import socket
 
 view = Blueprint('view' , __name__)
 
-@view.route('/ip')
+@view.route('/')
 def homePage():
     hostname = socket.gethostname()
     IPAddr = socket.gethostbyname(hostname)
