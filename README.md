@@ -29,7 +29,7 @@ Files on this project :
 * Open the directory and open it in terminal
 * Use the command `sudo docker-compose up --build -d --scale app=3` to activate the dockers.
 * Use the command `sudo docker logs {name of instance} -f` to get logs on specific instance.
-* Open browser and navigate to `http://localhost`
+* Open browser and navigate to `http://localhost:9090/`
 * Now you can see the ip of the instance , refresh it and see its changing everytime !
 
     
