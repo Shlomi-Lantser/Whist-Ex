@@ -6,7 +6,7 @@ Python web app and load balancer with 3 instances.
 # Description
 
 In this project i learned about docker and how to build it to an web app.
-i implemented the web app in python , the app prints the instance's ip address used `socket library`
+i implemented the web app in python , the app prints the local ip address used `socket library`
 The app GUI implemeted with `Flask` .
 
 
