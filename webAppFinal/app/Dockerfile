@@ -4,10 +4,10 @@ FROM python:alpine
 EXPOSE 9090
 # creates a dir for our application
 WORKDIR /app
-# copy our requirements.txt file and install dependencies
-COPY requirements.txt .
+# copy our application.
+COPY . /app
+
 RUN pip install -r requirements.txt
-# copy the rest of our application
-COPY . .
+
 # run the application
 CMD python app.py
