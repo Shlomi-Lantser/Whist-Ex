@@ -8,7 +8,7 @@ view = Blueprint('view' , __name__)
 def homePage():
     hostname = socket.gethostname()
     IPAddr = socket.gethostbyname(hostname)
-    returning = "<h1>Hello welcome to my web app \n Your Computer IP Address is: <h1>" + IPAddr
+    returning = "<h1>Hello welcome to my web app , The instance IP Address is: <h1>" + IPAddr
     return returning
 
 
