@@ -16,7 +16,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-1
+        aws-region: eu-west-2
 
     - name: Login to Amazon ECR
       id: login-ecr
@@ -30,5 +30,6 @@ jobs:
         IMAGE_TAG: ${{ steps.increment-git-tag.outputs.git-tag }}
       run: |
         cd webAppFinal/app/
-        docker build -t latest .
-        docker push latest
+        docker build -t myrepo .
+        docker tag myrepo:latest 930354804502.dkr.ecr.eu-west-2.amazonaws.com/myrepo:latest
+        docker push 930354804502.dkr.ecr.eu-west-2.amazonaws.com/myrepo:latest
